@@ -1,9 +1,17 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome  back Angular to {{ title }}!
-  </h1>
+<hr>
+<div class="nav-bar">
+  <ul>
+    <li routerLink=''>
+      Home
+    </li>
+    <li routerLink='/about-us'>
+      AboutUS
+    </li>
+    <li routerLink='/contact'>
+      Contact
+    </li>
+  </ul>
+  </div>
+  <hr>
+  <router-outlet></router-outlet>
   
-</div>
-
-<router-outlet></router-outlet>
