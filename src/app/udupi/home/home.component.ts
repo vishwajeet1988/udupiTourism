@@ -25,5 +25,15 @@ export class HomeComponent implements OnInit {
         this.mydata=res.json();
         });
   }
- 
+ more(id){
+   let navigationExtras: NavigationExtras={
+     queryParams: {
+       "id":id
+     }
+   };
+   this.router.navigate(['/about-us'],navigationExtras);
+ }
+
+
+
   }
